@@ -1,0 +1,42 @@
+body {
+    background-image: url(image3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+ }
+
+h3, p, button {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.home {
+	background-color : 	#ccffff;
+	font-family: cursive;
+	margin-top : 90px;
+	background-size: 75% 50%;
+}
+
+.home ul {
+	list-style-type: none;
+	margin : 0;
+	padding : 0;
+	overflow : hidden;
+}
+
+li {
+	float : left;
+
+}
+
+li a {
+	margin : 0;
+	display : block;
+	color: black;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color : #4dd2ff;
+}
