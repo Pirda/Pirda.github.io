@@ -1,0 +1,53 @@
+body {
+    background-image : url(image2.jpg);
+    font-family: 'Fresca', sans-serif;
+    background-size: cover;
+}
+
+.home {
+	background-color : 	#ccffff;
+	font-family: cursive;
+	margin-top : 90px;
+	background-size: 75% 50%;
+}
+
+.home ul {
+	list-style-type: none;
+	margin : 0;
+	padding : 0;
+	overflow : hidden;
+}
+
+li {
+	float : left;
+
+}
+
+li a {
+	margin : 0;
+	display : block;
+	color: black;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color : #4dd2ff;
+}
+
+h1 {
+    color : black;
+}
+
+img {
+    float : right;
+    width : 110px;
+    margin : 10px;
+}
+
+table {
+    background-color : #e6ffff;
+    margin : 20px;
+    position : relative;
+}
