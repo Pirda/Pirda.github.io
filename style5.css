@@ -1,0 +1,81 @@
+body {
+	background-image: url(image8.jpg);
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.home {
+	background-color : 	#ccffff;
+	font-family: cursive;
+	margin-top : 90px;
+	background-size: 75% 50%;
+}
+
+.home ul {
+	list-style-type: none;
+	margin : 0;
+	padding : 0;
+	overflow : hidden;
+}
+
+li {
+	float : left;
+
+}
+
+li a {
+	margin : 0;
+	display : block;
+	color: black;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color : #4dd2ff;
+}
+
+.pendidikan {
+	 width:100%
+	 padding : 30px;
+	 font-family: monospace;
+	 margin : 50px;
+	 background-color : #ccf2ff;
+	 border-spacing: 10px;
+}
+
+.bio {
+	background-color : 	#ccffff;
+	font-family: cursive;
+	margin-top : 20px;
+	margin-bottom: 90px;
+	background-size: 75% 50%;
+}
+
+.bio ul {
+	list-style-type: none;
+	margin : 0;
+	padding : 0;
+	overflow : hidden;
+}
+
+li {
+	 float : left;
+
+}
+
+li a {
+	margin : 0;
+	display : block;
+	color: black;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color : #4dd2ff;
+}
