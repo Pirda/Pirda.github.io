@@ -48,8 +48,8 @@ img {
 .data {
 	line-height: 1.8;
 	padding: 20px;
-	background-image: url(image7.jpg);  
-	font-family: monospace;
+	background-color : #e6ffff;
+	font-family: 'Acme', sans-serif;
 	margin : 50px;
 	width : 100%;
 }
