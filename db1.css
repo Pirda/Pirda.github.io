@@ -65,23 +65,23 @@ div.transbox3 p {
 
 div.transbox1 img {
     float: left; 
-    width: 300px; 
-    height: 300px;
+    width: 100px; 
+    height: 100px;
     margin-right: 20px;
 }
 
 div.transbox2 img {
     float: right; 
-    width: 300px; 
-    height: 300px;
+    width: 100px; 
+    height: 100px;
     margin-left: 20px;
 
 }
 
 div.transbox3 img {
     float: left; 
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     margin-right: 20px;
 
 }
