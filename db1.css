@@ -1,0 +1,87 @@
+div.background {
+    background: url(db4.jpg) repeat;
+    border: 2px solid black;
+    background-size: cover;
+}
+
+div.background h1{
+    text-align: center;
+    font-family: Brush Script MT;
+    font-size: 40px;
+}
+div.transbox1 {
+    margin: 300px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+div.transbox2 {
+    margin: 300px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+div.transbox3 {
+    margin: 300px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+div.transbox1 p {
+    text-align: justify;
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.transbox2 p {
+    text-align: justify;
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.transbox3 p {
+    text-align: justify;
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.transbox1 img {
+    float: left; 
+    width: 500px; 
+    height: 400px;
+    margin-right: 20px;
+}
+
+div.transbox2 img {
+    float: right; 
+    width: 500px; 
+    height: 400px;
+    margin-left: 20px;
+
+}
+
+div.transbox3 img {
+    float: left; 
+    width: 500px;
+    height: 400px;
+    margin-right: 20px;
+
+}
