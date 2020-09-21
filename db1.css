@@ -10,7 +10,7 @@ div.background h1{
     font-size: 40px;
 }
 div.transbox1 {
-    margin: 400px;
+    margin: 300px;
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.8;
@@ -21,7 +21,7 @@ div.transbox1 {
 }
 
 div.transbox2 {
-    margin: 400px;
+    margin: 300px;
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.8;
@@ -32,7 +32,7 @@ div.transbox2 {
 }
 
 div.transbox3 {
-    margin: 400px;
+    margin: 300px;
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.8;
