@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Tugas03DB</title>
+    <link rel="stylesheet" href="db3.css">
+</head>
+<body>
+<div class="background">
+  <h1>Welcome to Pirda's Website</h1>
+  <h1>D121181012</h1>
+  <h1>Proses Desain Database</h1>
+  <div class="transbox1">
+    <h2>Tahap 1 :</h2>
+    <h2>Pengumpulan data dan analisa</h2>
+    <p>Proses identifikasi dan analisa kebutuhan-kebutuhan data disebut pengumpulan data dan analisa. Untuk menentukan kebutuhan-kebutuhan suatu sistem database, pertama-tama harus mengenal bagian-bagian lain dari sistem informasi yang akan berinteraksi dengan sistem database, termasuk para pemakai yang ada dan para pemakai yang baru serta aplikasi-aplikasinya. Kebutuhan-kebutuhan dari para pemakai dan aplikasi-aplikasi inilah yang kemudian dikumpulkan dan dianalisa.</p>
+    <p>Aktifitas-aktifitas pengumpulan data dan analisa :</p>
+    <p>1. Menentukan kelompok pemakai dan bidang-bidang aplikasinya.</p>
+    <p>2. Peninjauan dokumentasi yang ada.</p>
+    <p>3. Analisa lingkungan operasi dan pemrosesan data.</p>
+    <p>4. Daftar pertanyaan dan wawancara.</p>
+  </div>
+
+  <div class="transbox2">
+    <h2>Tahap 2 :</h2>
+    <h2>Perancangan database konseptual</h2>
+    <p>Tujuan dari tahap ini adalah menghasilkan skema konseptual untuk database yang tergantung pada sebuah DBMS yang spesifik. Sering menggunakan sebuah high-level data model seperti ER/EER model selama tahap ini. Dalam skema konseptual, kita harus merinci aplikasi-aplikasi database yang diketahui dan transaksi-transaksi yang mungkin.</p>
+    <p>Aktifitas paralel desain database secara konseptual :</p>
+    <p>1. Perancangan skema konseptual :</p>
+    <p>Menguji kebutuhan-kebutuhan data dari suatu database yang merupakan hasil dari tahap 1, dan menghasilkan sebuah skema konseptual database pada DBMS independent model data tingkat tinggi seperti EER (enhanced entity relationship) model.</p>
+    <p>2. Perancangan transaksi :</p>
+    <p>Menguji aplikasi-aplikasi database dimana kebutuhan-kebutuhannya telah dianalisa pada tahap 1, dan menghasilkan perincian transaksi-transaksi ini.</p>
+  </div>
+
+  <div class="transbox3">
+    <h2>Tahap 3 :</h2>
+    <h2>Pemilihan DBMS</h2>
+    <p>Pemilihan database ditentukan oleh beberapa faktor diantaranya :</p>
+    <p>1. Struktur data</p>
+    <p>Jika data yang disimpan dalam database mengikuti struktur hirarki, maka suatu jenis hirarki dari DBMS harus dipikirkan.</p>
+    <p>2. Personal yang telah terbiasa dengan suatu sistem</p>
+    <p>Jika staf programmer dalam suatu organisasi sudah terbiasa dengan suatu DBMS, maka hal ini dapat mengurangi biaya latihan dan waktu belajar.</p>
+    <p>3. Tersedianya layanan penjual</p>
+    <p>Keberadaan fasilitas pelayanan penjual sangat dibutuhkan untuk membantu memecahkan beberapa masalah sistem.</p>
+    <p>4. Teknik</p>
+    <p>Keberadaan DBMS dalam menjalankan tugasnya seperti jenis-jenis DBMS (relational, network, hierarchical, dll), struktur penyimpanan, dan jalur akses yang mendukung DBMS, pemakai, dll.</p>
+  </div>
+
+  <div class="transbox4">
+    <h2>Tahap 4 :</h2>
+    <h2>Perancangan database secara logika (pemetaan model data)</h2>
+    <p>Tahap selanjutnya dari perancangan database adalah membuat sebuah skema konseptual dan skema eksternal pada model data dari DBMS yang terpilih. Tahap ini dilakukan oleh pemetaan skema konseptual dan skema eksternal yang dihasilkan pada tahap 2. Pada fase ini, skema konseptual ditransformasikan dari model data tingkat tinggi yang digunakan pada tahap 2 ke dalam model data dari DBMS yang dipilih pada tahap 3.</p>
+    <p>Pemetaan diproses dalam 2 tingkat :</p>
+    <p>1. Pemetaan system-independent :</p>
+    <p>Pemetaan ke dalam model data DBMS dengan tidak mempertimbangkan karakteristik atau hal-hal yang khusus yang berlaku pada implementasi DBMS dari model data tsb.</p>
+    <p>2. Penyesuaian skema ke DBMS yang spesifik  :</p>
+    <p>Mengatur skema yang dihasilkan pada langkah 1 untuk disesuaikan pada implementasi yang khusus di masa yang akan datang dari suatu model data yang digunakan pada DBMS yang dipilih.</p>
+  </div>
+
+  <div class="transbox5">
+    <h2>Tahap 5 :</h2>
+    <h2>Perancangan database fisik</h2>
+    <p>Perancangan database secara fisik merupakan proses pemilihan struktur-struktur penyimpanan dan jalur-jalur akses pada file-file database untuk mencapai penampilan yang terbaik pada bermacam-macam aplikasi. Selama tahap ini, dirancang spesifikasi-spesifikasi untuk database yang disimpan yang berhubungan dengan struktur-struktur penyimpanan fisik, penempatan record dan jalur akses.</p>
+    <p>Petunjuk pemilihan perancangan database secara fisik :</p>
+    <p>1. Response time</p>
+    <p>Waktu yang telah berlalu dari suatu transaksi database yang diajukan untuk menjalankan suatu tanggapan. Pengaruh utama pada response time adalah di bawah pengawasan DBMS yaitu : waktu akses database untuk data item yang ditunjuk oleh suatu transaksi. Response time juga dipengaruhi oleh beberapa faktor yang tidak berada di bawah pengawasan DBMS, seperti penjadwalan sistem operasi atau penundaan komunikasi.</p>
+    <p>2. Space utility</p>
+    <p>Jumlah ruang penyimpanan yang digunakan oleh file-file database dan struktur-Struktur jalur akses.</p>
+    <p>3. Transaction throughput</p>
+    <p>Rata-rata jumlah transaksi yang dapat diproses per menit oleh sistem database, dan merupakan parameter kritis dari sistem transaksi (misal, digunakan pada pemesanan tempat di pesawat, bank, dll). Hasil dari tahap ini adalah penentual awal dari struktur penyimpanan dan jalur akses untuk file-file database.</p>
+  </div>
+
+  <div class="transbox6">
+    <h2>Tahap 6 :</h2>
+    <h2>Implementasi sistem database</h2>
+    <p>Setelah perancangan secara logika dan secara fisik lengkap, kita dapat melaksanakan sistem database. Perintah-perintah dalam DDL dan SDL(storage definition language) dari DBMS yang dipilih, dihimpun dan digunakan untuk membuat skema database dan file-file database (yang kosong) kemudian database tsb dimuat (disatukan) dengan datanya. Jika data harus dirubah dari sistem komputer sebelumnya, perubahan-perubahan yang rutin mungkin diperlukan untuk format ulang datanya yang kemudian dimasukkan ke database yang baru. Transaksi-transaksi database sekarang harus dilaksanakan oleh para programmmer aplikasi.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
