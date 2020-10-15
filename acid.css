@@ -7,9 +7,9 @@ div.background1 {
 div.background1 h1{
     text-align: center;
     font-family: Brush Script MT;
-    font-size: 35;
+    font-size: 45;
     margin-bottom: 150px;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .row {
@@ -66,6 +66,7 @@ div.background2 p{
     margin-left: 50px;
     margin-right: 450px;
     font-family: cursive;
+    font-size: 20px;
 }
 
 div.background2 img{
@@ -74,4 +75,5 @@ div.background2 img{
 
 div.background2 table tr td{
     font-family: cursive;
+    font-size: 20px;
 }
