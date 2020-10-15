@@ -1,0 +1,77 @@
+div.background1 {
+    background: url(acid6.jpg) repeat;
+    border: 1px solid white;
+    background-size: cover;
+}
+
+div.background1 h1{
+    text-align: center;
+    font-family: Brush Script MT;
+    font-size: 35;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+.row {
+      background: #2980b9;
+      color: #fff;
+    }
+
+    h2 {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .btn {
+      border: 1px solid #fff;
+    }
+
+    ul.social-buttons {
+      color: gray;
+    }
+
+    ul.social-buttons li a {
+      font-size: 20px;
+      line-height: 50px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      color: white;
+      border-radius: 100%;
+      outline: none;
+      background-color: #212529;
+    }
+
+div.background2 {
+    background: url(https://ae01.alicdn.com/kf/HTB1itRRnf9TBuNjy1zbq6xpepXai.jpg) repeat;
+    border: 1px solid white;
+    background-size: cover;
+}
+
+div.background2 h1{
+    text-align: center;
+    margin : 50px;
+    font-family: cursive;
+}
+
+div.background2 h3{
+    text-align: left;
+    margin-left: 50px;
+    font-family: cursive;
+}
+
+div.background2 p{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 450px;
+    font-family: cursive;
+}
+
+div.background2 img{
+    width: 300px;
+}
+
+div.background2 table tr td{
+    font-family: cursive;
+}
