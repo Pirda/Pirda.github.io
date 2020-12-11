@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Finite Automata</title>
+    <link rel="stylesheet" href="finite_automata.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="box red">
+<div class="background1">
+  <h1 class="animate__animated animate__bounce animate__slower">Pirda's Website</h1>
+
+  <div class="col-sm-12">
+    <ul class="list-inline social-buttons text-center mt-5">
+      <li class="list-inline-item">
+        <a href="https://web.facebook.com/people/Firda/100017015178339" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/firdafrd09/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="malito:firdafrd031@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+<div class="container">
+
+<div class="background2">
+  <h1>Aplikasi Pemanfaatan DFA/NFA</h1>
+  <h3>Finite Automata</h3>
+  <p>Finite Automata adalah mesin automata dari suatu Bahasa regular. Finite Automata memiliki jumlah state yang banyaknya berhingga dan dapat berpindah-pindah dari suate state ke state yang lainnya. Finite Automata dibagi menjadi Deterministic Finite Automata (DFA) dan Non Deterministic Finite Automata (NFA).</p><br>
+
+  <h3>Aplikasi Pemanfaatan DFA/NFA</h3>
+  <figure>
+  <img src="kopi.png"><img src="sunda.png"><br>
+  <img src="mesinabstrak.png"><img src="vendingmesin.png">
+  </figure><br>
+
+    <h3>Contoh Finite State Automata Pada Aplikasi Pembelajaran Aksara Sunda</h3>
+    <h4>1. Use Case Diagram</h4>
+    <img src="usecase.png" margin-left="200px"/></td>
+    <p>Gambar di atas menunjukkan use case diagram aplikasi translator aksara sunda. Pada use case diagram tersebut terdapat satu aktor yaitu pengguna yang dapat mengakses keseluruhan use case.</p><br>
+
+    <h4>2. Flowchart</h4>
+    <img src="flowchart.png"/>
+    <p>Dalam implementasi automata, semua masukan dari bahasa untuk penerjemahan menjadi aksara sunda pertama system akan mengenal terlebih dahulu huruf vocal (v) dan konsonan yang akan digunakan, hal ini dilakukan untuk pemenggalan suku kata tersebut. Pemenggalan ini dilakukan menggunakan diagram transisi Finite State Automata. Pemenggalan digunakan untuk memisahkan suku kata yang dibentuk.</p> 
+    <br>
+    
+    <h4>3. Mesin Automata pada Penerjemahan Kalimat</h4>
+    <img src="mesinautomata.png"/>
+    <p>Pada mesin ini pertama ada masukan untuk mengenal kata apa yang akan dimasukan kemudian dilakukan state menangkap kalimat tersebut dan diterjemahkan dengan melakukan aksi dari input yang sudah diterjemahkan tadi ada output hasil dari terjemahan.
+    </p><br>
+
+    <h4>4. Proses Aplikasi</h4>
+    <p>Aksara latin terdiri dari huruf, angka, spasi dan tanda baca. Angka, spasi dan tanda baca dapat ditranslate ke aksara sunda secara langsung. sedangkan untuk huruf harus melihatpola suku katanya terlebih dahulu karena proses translate ke aksara sunda berdasarkan pola suku kata. Tanda baca hanya tanda baca titik dan koma yang dapat ditranslate ke aksara sunda. Setiap kata dibatasi dengan 4 susunan konsonan berurutan karena tidak ada kata yang terdiri dari lebih 4 konsonan berurutan.
+    </p><br>
+
+    <h4>5. Halaman Menu Utama</h4>
+    <img src="halamanutama.png"/>
+    <p>Halaman menu utama merupakan halaman yang muncul setelah halaman splash screen dieksekusi. Pada halaman ini terdapat lima fitur menu yakni menu translate, aksara sunda, sandangan, tentang, dan keluar. 
+    </p><br>
+
+
+     <h4>6. Halaman Penerjemah Aksara</h4>
+    <img src="halamantranslate.png"/>
+    <p>Halaman   menu   translate   ini   termasuk salah   satu   fitur   yang   terdapat   pada aplikasi   ini.   Aplikasi   ini   mampu mentranslate   dari   huruf   latin   ke   aksara sunda. Cara menggunakan fitur translate ini pengguna pada saat di halaman utama memilih   fitur   translate   kemudian memasukan huruf atau kata yang akan ditranslate   pada   form   yang   di   sediakan kemudian   klik   tombol   translate   yang tersedia, hasil translate akan di tampilkan di form hasil translate.
+    </p><br>
+
+    <h4>7. Halaman Belajar Aksara Sunda</h4>
+    <img src="halamanbelajar.png"/>
+    <p>Halaman belajar aksara sunda merupakan halaman yang digunakan untuk mempelajari aksara sunda.Antara lain aksara swara, aksara ngalagena, rarangkén, angka dan tanda baca
+    </p><br>
+
+</div>
+</div>
+
+
+</body>
+</html>
