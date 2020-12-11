@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Regular Expression</title>
+    <link rel="stylesheet" href="regex.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="box red">
+<div class="background1">
+  <h1 class="animate__animated animate__bounce animate__slower">Pirda's Website</h1>
+
+  <div class="col-sm-12">
+    <ul class="list-inline social-buttons text-center mt-5">
+      <li class="list-inline-item">
+        <a href="https://web.facebook.com/people/Firda/100017015178339" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/firdafrd09/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="malito:firdafrd031@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+<div class="container">
+
+<div class="background2">
+  <h1>Regular Expression</h1>
+
+  <h3>Pengertian Regex</h3>
+  <p>Regex adalah singkatan dari Regular Expression.</p>
+  <p>Regex merupakan sebuah reks (string) yang mendefinisikan sebuah pola pencarian sehingga dapat membantu kita untuk melakukan matching (pencocokan), locate (pencarian), dan manipulasi teks.</p>
+  <img src="regex1.png"><br>
+
+  <h3>Pemanfaatan Regex dalam Pemrograman</h3>
+  <h4>1. Regex untuk Validasi Data</h4>
+  <p>Kode HTML :</p>
+  <img src="regex2.png">
+  <p>Perhatikan atribut pattern, atribut ini digunakan untuk menyimpan pola regex. Pada contoh di atas, polanya adalah pengecekan karakter yang diinputkan pada password.</p>
+
+  <p>Kode Javasript :</p>
+  <img src="regex3.png">
+  <p>Pada contoh ini, kita tidak menggunakan regex di dalam Javascript. Melainkan kita menggunakannya pada HTML.<br>
+  Kode javascript di atas, hanya bertugas untuk mengecek apakah nilai dari field password sudah sesuai atau tidak dengan yang ada pada atribut pattern.</p>
+  <p>Berikut hasilnya :</p>
+  <img src="regex4.png"><br>
+
+  
+    <h4>2. Regex untuk Pencarian</h4>
+    <p>Contoh :</p>
+    <p>Misal kita ingin mencari teks pada syslog. Kita bisa melihat isi file syslog dengan cat.</p>
+    <img src="regex5.png">
+    <p>Untuk mengetahui log apa saja yang berkaitan dengan jaringan, dapat memanfaatkan grep untuk mencari teks tertentu pada log</p>
+    <img src="regex6.png">
+    <p>Kata network ini adalah pola regex yang akan menjadi kata kunci pencarian.</p>
+    <P>Hasilnya :</P>
+    <img src="regex7.png"><br>
+
+    <h4>3. Regex untuk Find and Replace</h4>
+    <p>Salah satu manfaat regex yang saya suka adalah find and replace. Fitur ini membantu saya untuk mengelola teks dan konten lebih efisien.</p>
+    <p>Tek dibawah akan diubah :</p>
+    <img src="regex8.png">
+    <p>Menjadi :</p>
+    <img src="regex9.png">
+    <p>Maka pola pencariannya :</p>
+    <img src="regex10.png">
+    <p>Dan pola untuk mengubahnya :</p>
+    <img src="regex11.png">
+    <p>Hasilnya :</p>
+    <img src="regex12.png">
+    <p>Pada pola pencarian di atas, saya melakukan pengelompokan atau grouping sebanyak lima kelompok. Lalu melakukan subtitusi atau replace.</p>
+    <img src="regex13.png">
+    <p>Contoh lain :</p>
+    <img src="regex14.png">
+    <p>Hasil setelah disubtitusi :</p>
+    <img src="regex15.png">
+
+</div>
+</div>
+
+
+</body>
+</html>
