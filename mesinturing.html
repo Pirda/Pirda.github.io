@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Mesin Turing</title>
+    <link rel="stylesheet" href="mesinturing.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="box red">
+<div class="background1">
+  <h1 class="animate__animated animate__bounce animate__slower">Pirda's Website</h1>
+</div>
+</div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+<div class="container">
+
+<div class="background2">
+  <h1>Mesin Turing</h1>
+  <h3>Pengantar Mesin Turing</h3>
+  <p>Mesin turing dirancang mengatasi kelemahan FSA dan PDA</p>
+  <p>Caranya dengan mempresentasikan logika kerja mesin tidak menggunaka stack sebagaimana representasi dalam PDA, tetapi menggunakan representasi pita yang dapat dibaca dan ditulisi</p>
+  <p>Mesin turing diwakili oleh sebuah pita panjang tak terhingga. Pada pita dapat ditulisi/dibacakan sebuah simbol</p>
+  <p>Setelah pita ditulisi maka simbol pita kemudian akan berubah menjadi simbol yang baru saja dituliskan</p><br>
+
+
+  <h3>Definisi Mesin Turing</h3>
+  <p>Mesin turing didefinisikan sebagai 7 tuple M = {Q, &sum;, &Gamma;, S, &thorn;, &Delta;, F}</p>
+  <p>Q : himpunan hingga state,</p>
+  <p>&sum; : alfabet input,</p>
+  <p>&Gamma; : simbol pada pita (meliputi pula blank)</p>
+  <p>S : state awal, S &isin; Q</p>
+  <p>&thorn; : simbol kosong (blank) (bukan bagian dari &sum;)</p>
+  <p>&Delta; : fungsi transisi</p>
+  <p>F : state akhir, F &isin; Q</p><br>
+
+
+  <h3>Prinsip Kerja Mesin Turing</h3>
+  <p>1. Lihat state semula dan simbol yang ditunjuk head</p>
+  <p>2. Berdasarkan fungsi transisinya, tentukan :</p>
+  <p>- state berikutnya</p>
+  <p>- lakukan penulisan ke pita</p>
+  <p>- gerakkan head ke kanan dan ke kiri</p>
+  <p>3. Bila dari pasangan state dan simbol yang ditunjuk head tidak ada lagi fungsi transisinya, berarti mesin turing berhenti</p>
+  <p>4. Bila mesin turing berhenti di dalam state final (F), berarti diterima. Sebaliknya jika mesin berhenti tidak pada state akhir, berarti inputan tersebut ditolak.</p><br>
+  
+
+  <h3>Gerakan Mesin Turing</h3>
+  <p>Gerakan mesin turing diwakili oleh fungsi transisi :</p>
+  <p>&Delta;(qi, a) = (qj, b, X) : Mesin kedudukan membaca simbol masukan a,</p>
+  <p>Gerakan : Mesin berubah ke status qj, menulis b dan posisi baca/tulis bergerak X (berupa R = gerak ke kanan atau L = gerak ke kiri) </p><br>
+
+  <h3>Contoh Gerakan Mesin Turing</h3>
+  <p>Untuk gerakan fungsi transisi &Delta;(q1, a) = (q3, b, R) artinya :</p>
+  <img src="mesinturing1.jpg">
+  <p>Setelah membaca simbol a, kedudukan mesin = q3, menulis b dan bergerak ke kanan</p>
+  <p>Hasil sebagai berikut :</p>
+  <img src="mesinturing2.jpg"><br>
+
+
+  <h4>Contoh Mesin Turing</h4>
+  <p>Dimiliki mesin turing dengan definisi M = {Q, &sum;, &Gamma;, S, F, &thorn;, &Delta;,}</p>
+  <p>Q = {q1, q2}</p>
+  <p>&sum; = {a, b}</p>
+  <p>&Gamma; = {a, b, &thorn;}</p>
+  <p>S = {q1}</p>
+  <p>F = {q2}</p>
+  <p>&Delta; : &Delta; (q1, a) = (q1, a, R)</p>
+  <p>&emsp; &Delta; (q1, b) = (q1, a, R)</p>
+  <p>&emsp; &Delta; (q1, &thorn;) = (q2, &thorn;, L)</p>
+  <p>Jika diinputkan string "abbba", maka gerakan mesin turing akan menjadi seperti apa?</p><br>
+
+  <h4>Gerakan Mesin Turing dengan Inputan abbba</h4>
+  <img src="mesinturing3.png">
+  <p>Dapat dinyatakan bahwa mesin turing tersebut apabila diumpamakan sederetan simbol a dan atau simbol b dengan jumlah 0 atau lebih akan mengantar pada kedudukan final q2. Dengan kata lain mesin turing tersebut dapat mengenali bahasa (a, b)*.</p><br>
+
+  
+
+</div>
+</div>
+
+
+</body>
+</html>
