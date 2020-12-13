@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Hirarki Chomsky</title>
+    <link rel="stylesheet" href="chomsky.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="box red">
+<div class="background1">
+  <h1 class="animate__animated animate__bounce animate__slower">Pirda's Website</h1>
+</div>
+</div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+<div class="container">
+
+<div class="background2">
+  <h1>Hirarki Chomsky</h1>
+  <h3>Hirarki Chomsky</h3>
+  <p>Tipe sebuah grammar (atau bahasa) ditentukan dengan aturan sebagai berikut :</p>
+  <p><i>A language is said to be type-i (i= 0, 1, 2, 3) language if it can be specified by a type-i grammar but can't be specified any type-(i+1) grammar.</i></p>
+  <img src="chomsky1.png"><br>
+
+
+  <h3>Grammar tipe ke-0 : Unrestristed Grammar (UG)</h3>
+  <img src="chomsky2.jpg">
+  <p>Ciri :</p>
+  <p>Tidak ada batasan pada aturan produksi</p>
+  <p>Contoh :</p>
+  <p>Abc -> De</p><br>
+
+
+  <h3>Grammar tipe ke-1 : Context Sensitive Grammar (CSG)</h3>
+  <img src="chomsky3.jpg">
+  <p>Ciri :</p>
+  <p>Panjang string ruas kiri harus < (lebih kecil) atau = (sama dengan) ruas kanan</p>
+  <p>Contoh :</p>
+  <p>Ab -> DeF</p>
+  <p>CD -> eF</p><br>
+  
+
+  <h3>Grammar tipe ke-2 : Context Free Grammar (CFG)</h3>
+  <img src="chomsky4.jpg">
+  <p>Ciri :</p>
+  <p>Ruas kiri haruslah tepat satu simbol variabel, yaitu simbol non terminal</p>
+  <p>Contoh :</p>
+  <p>B -> CDeFg</p>
+  <p>D -> BcDe</p><br>
+
+  <h3>Grammar tipe ke-3 : Regular Grammar (RG)</h3>
+  <img src="chomsky5.jpg">
+  <p>Ciri :</p>
+  <p>Ruas kiri hanya memiliki maksimal satu simbol non terminal</p>
+  <p>Contoh :</p>
+  <p>A > e</p>
+  <p>A > gH</p><br>
+
+  <h3>Contoh Analisa Penentuan Type Grammar</h3>
+  <h4>1. Grammar G1 dengan Q1 = {S -> aB, B -> bB, B -> b}.</h4>
+  <p>> Ruas kiri semua produksinya terdiri dari sebuah VN maka G1 kemungkinan tipe CFG atau RG</p>
+  <p>> Karena semua ruas kanannya terdiri dari sebuah VT atau string V T VN maka G1 adalah RG</p><br>
+
+  <h4>2. Grammar G2 dengan Q2 = {S -> Ba, B -> Bb, B -> b}.</h4>
+  <p>> Ruas kiri semua produksinya terdiri dari sebuah VN maka G2 kemungkinan tipe CFG atau RG</p>
+  <p>> Karena semua ruas kanannya terdiri dari sebuah VT atau string VN VT maka G2 adalah RG</p><br>
+
+  <h4>3. Grammar G3 dengan Q3 = {S -> Ba, B -> bB, B -> b}.</h4>
+  <p>> Ruas kiri semua produksinya terdiri dari sebuah VN maka G3 kemungkinan tipe CFG atau RG</p>
+  <p>> Karena semua ruas kanannya mengandung string VT VN (yaitu bB) dan juga string VN VT (Ba) maka G3 bukan CFG, dengan kata lain G3 adalah RG</p><br>
+
+  <h4>4. Grammar G4 dengan Q4 = {S -> aAb, B -> aB}.</h4>
+  <p>> Ruas kiri semua produksinya terdiri dari sebuah VN maka G4 kemungkinan tipe CFG atau RG</p>
+  <p>> Karena semua ruas kanannya mengandung string yang panjangnya lebih dari 2 (yaitu aAb) maka G4 bukan RG, dengan kata lain G4 adalah CFG.</p><br>
+
+  
+
+</div>
+</div>
+
+
+</body>
+</html>
