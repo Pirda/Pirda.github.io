@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Digital Photo Forensics</title>
+    <link rel="stylesheet" href="forensik1.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+</head>
+<body>
+<div class="background1">
+  <h1 class="animate__animated animate__bounce animate__slower">Pirda's Website</h1>
+
+  <div class="col-sm-12">
+    <ul class="list-inline social-buttons text-center mt-5">
+      <li class="list-inline-item">
+        <a href="https://web.facebook.com/people/Firda/100017015178339" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/firdafrd09/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="malito:firdafrd031@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+<div class="background2">
+  <h1><b>Digital Photo Forensics</b></h1>
+
+  <h3><b>Digital Forensic</b></h3>
+  <p>Digital Forensik adalah suatu ilmu pengetahuan dan keahlian untuk mengidentifikasi, mengoleksi, menganalisa dan menguji bukti–bukti digital pada saat menangani sebuah kasus yang memerlukan penanganan dan identifikasi barang bukti digital.<br>
+  <b>Forensik digital</b> <i>(Digital forensics)</i> (juga dikenal sebagai <b>ilmu forensik digital</b>) adalah salah satu cabang ilmu forensik, terutama untuk penyelidikan dan penemuan konten perangkat digital, dan seringkali dikaitkan dengan kejahatan komputer. Istilah forensik digital pada awalnya identik dengan forensik komputer tetapi kini telah diperluas untuk menyelidiki semua perangkat yang dapat menyimpan data digital.</p>
+
+  <h3><b>Digital Photo Forensics</b></h3>
+  <p>Perkembangan foto yang semakin maju membuatnya memiliki banyak keunggulan dan kekurangan, salah satunya adalah mudahnya dimanipulasi dengan software editing. Perubahan foto dapat dibuat atau diedit dengan mudah, sehingga dapat merubah informasi yang disampaikan menjadi berbeda dan membuatnya rawan digunakan untuk tindak kejahatan.<br>
+   Forensik citra digital merupakan salah satu metode ilmiah pada bidang penelitian yang bertujuan untuk mendapatkan fakta-fakta pembuktian dalam menentukan keaslian image.</p>
+  
+  
+    <h3><b>Metode Digital Photo Forensics</b></h3>
+    <p><b>a. Exif Metadata </b><br>
+    Setiap foto memiliki “exif/metadata”, yaitu “rekaman aktivitas” foto.<br>
+    Jika foto itu asli, dari camera smartphone atau DSLR, maka akan ada informasi merk camera, pemakaian ISO, focal length, flash, dll. Jika geotag diaktifkan, bisa diketahui juga di mana foto tersebut diambil. Asalkan belum diedit.<br>
+    Bisa menggunakan online tool “Jeffrey’s Image Metadata Viewer“. Metode ini tidak berdaya pada foto yang beredar di media sosial, karena foto yang di media sosial sudah dianggap tidak asli. Metadata dapat diubah dengan mudah, misalnya dengan Exif Tool untuk read, write, dan edit exif/metadata.</p>
+    <p><b>b. Error Level Analysis (ELA)</b><br>
+    <i>Error Level Analysis (ELA)</i>, adalah sebuah cara untuk mengetahui adanya modifikasi atau tidak pada sebuah image. Khususnya untuk image beraketsi JPEG,  maka seluruh bagian dari image seharusnya memiliki nilai kompresi yang sama. Bila ditemukan bagian dari image dengan perbedaan ELA yang sangat siknifikan maka dapat diduga adanya upaya modifikasi pada bagian tersebut.</p>
+    <p><b>c. Pola Ketajaman Pixel</b><br>
+    Pada dasarnya, suatu gambar yang asli harusnya punya pola yang sama. Untuk melihat ketajaman pixel ini bisa diperbesar atau di zooming. Saat di zooming biasanya akan terlihat pola kotak-kotak yang kemudian disebut pixel.</p>
+
+
+    <h3><b>Study Case Digital Photo Forensic</b></h3>
+    <p>Study case ini diminta untuk menyelidiki kedua gambar di bawah apakah asli atau telah mengalami modifikasi. Jika telah dimodifikasi, perubahan apa yang dilakukan, bagaimana jawaban tersebut ditemukan dan menggunakan metode apa. Pada kasus ini kita menggunakan metode <i>Error Level Analysis (ELA)</i> dengan bantuan tools <i>ForensicallyBeta.</i></p>
+
+    <p><img src = "forensik1.png"></p>
+
+    <table style="margin-left: 50px">
+    <tr>
+    <td><b>- Macaqa.jpg &nbsp;</b></td>
+    <td>: cerita tentang 3 makaka yang "Hear Nothing, "See Nothing", dan "Say Nothing" dalam sebuah foto di dalam kereta</td>
+    </tr>
+    <tr>
+    <td><b>- News3.jpg &nbsp;</b></td>
+    <td>: sebuah foto yang diambil dari dalam sebuah media berita online.</td>
+    </tr>
+    </table><P></P>
+
+    <p><b>Langkah Analisis</b><br>
+    - Buka situs <i>ForensicallyBeta</i> atau klik <a href="https://29a.ch/photo-forensics/#forensic-magnifier" target="_blank">tautan ini</a><br>
+    - Setelah itu, upload foto yang hendak diidentifikasi<br>
+    - Setelah berhasil di upload, langkah selanjutnya adalah menganalisis<br>
+    - Untuk menganalisis, bisa langsung klik fitur ELA yang telah disediakan</p>
+
+    <p>Dari sini bisa kita lihat perbedaan kontras antara dua foto di bawah. Dimana :</p>
+
+    <p><img src = "forensik2.png"></p>
+
+    <p>- Level noise <b>Macaqa.jpg</b> cenderung berada pada satu titik yakni masker yang digunakan pria berkemeja putih<br>
+    - Pada foto <b>News3.jpg</b>, sebaran level noisenya terlihat rata dan tidak fokus pada satu titik saja</p>
+
+    <p>Dari gambar tersebut dapat disimpulkan bahwa foto <b>Macaqa.jpg telah dimodifikasi</b> pada bagian tertentu sedangkan foto <b>News.jpg</b> terlihat masih asli dan <b>belum dimodifikasi</b> karena sebaran level noisenya rata.</p>
+
+
+</div>
+
+
+</body>
+</html>
